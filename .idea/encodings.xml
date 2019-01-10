@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base_parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base_parent/base_util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lovebuy_base_parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lovebuy_base_parent/base_interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lovebuy_base_parent/base_util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lovebuy_base_parent/plat_provider_service_8001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lovebuy_eureka_server_7001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lovebuy_zuul_server_9527" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/plat_parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/plat_parent/plat_interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/plat_parent/plat_service_8001" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/base_parent/base_parent.iml" filepath="$PROJECT_DIR$/base_parent/base_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base_parent/base_util/base_util.iml" filepath="$PROJECT_DIR$/base_parent/base_util/base_util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemonsports_parent.iml" filepath="$PROJECT_DIR$/lemonsports_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lovebuy_eureka_server_7001/lovebuy_eureka_server_7001.iml" filepath="$PROJECT_DIR$/lovebuy_eureka_server_7001/lovebuy_eureka_server_7001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lovebuy_zuul_server_9527/lovebuy_zuul_server_9527.iml" filepath="$PROJECT_DIR$/lovebuy_zuul_server_9527/lovebuy_zuul_server_9527.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plat_parent/plat_interface/plat_interface.iml" filepath="$PROJECT_DIR$/plat_parent/plat_interface/plat_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plat_parent/plat_parent.iml" filepath="$PROJECT_DIR$/plat_parent/plat_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plat_parent/plat_service_8001/plat_service_8001.iml" filepath="$PROJECT_DIR$/plat_parent/plat_service_8001/plat_service_8001.iml" />
+    </modules>
+  </component>
+</project>

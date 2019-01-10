@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="base_util" />
+        <module name="lovebuy_eureka_server_7001" />
+        <module name="lovebuy_zuul_server_9527" />
+        <module name="plat_interface" />
+        <module name="plat_service_8001" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="base_interface" target="1.8" />
+      <module name="base_parent" target="1.8" />
+      <module name="base_util" target="1.8" />
+      <module name="lemonsports_parent" target="1.8" />
+      <module name="lovebuy_base_parent" target="1.8" />
+      <module name="lovebuy_eureka_server_7001" target="1.8" />
+      <module name="lovebuy_zuul_server_9527" target="1.8" />
+      <module name="plat_interface" target="1.8" />
+      <module name="plat_parent" target="1.8" />
+      <module name="plat_provider_service_8001" target="1.8" />
+      <module name="plat_service_8001" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
