@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c82a1ca7-dff3-4e3b-88a9-058f06c8190e" name="Default" comment="" />
+    <list default="true" id="c82a1ca7-dff3-4e3b-88a9-058f06c8190e" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/lovebuy_config_server/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lovebuy_config_server/src/main/java/cn/lemonsports/ConfigApplication_1299.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lovebuy_config_server/src/main/resources/application.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/plat_parent/plat_service_8001/src/main/resources/bootstrap.yml" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/plat_parent/plat_service_8001/src/main/resources/application.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/lovebuy_eureka_server_7001/target/" />
@@ -15,6 +26,7 @@
     <ignored path="$PROJECT_DIR$/plat_parent/target/" />
     <ignored path="$PROJECT_DIR$/plat_parent/plat_interface/target/" />
     <ignored path="$PROJECT_DIR$/plat_parent/plat_service_8001/target/" />
+    <ignored path="$PROJECT_DIR$/lovebuy_config_server/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,31 +36,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EurekaApplication_7001.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lovebuy_eureka_server_7001/src/main/java/cn/lemonsports/EurekaApplication_7001.java">
+      <file leaf-file-name="ConfigApplication_1299.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lovebuy_config_server/src/main/java/cn/lemonsports/ConfigApplication_1299.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="10" column="60" lean-forward="false" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+            <state relative-caret-position="264">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlatServiceApplication_8001.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plat_parent/plat_service_8001/src/main/java/cn/lemonsports/PlatServiceApplication_8001.java">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lovebuy_config_server/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="10" column="65" lean-forward="false" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+            <state relative-caret-position="220">
+              <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZuulApplication_9527.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lovebuy_zuul_server_9527/src/main/java/cn/lemonsports/ZuulApplication_9527.java">
+      <file leaf-file-name="bootstrap.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plat_parent/plat_service_8001/src/main/resources/bootstrap.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+            <state relative-caret-position="264">
+              <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -62,6 +74,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -84,7 +99,6 @@
         <option value="$PROJECT_DIR$/base_parent/base_util/src/main/java/cn/lemonsports/util/AjaxResult.java" />
         <option value="$PROJECT_DIR$/base_parent/base_util/src/main/java/cn/lemonsports/util/BaseQuery.java" />
         <option value="$PROJECT_DIR$/plat_parent/plat_interface/pom.xml" />
-        <option value="$PROJECT_DIR$/plat_parent/plat_service_8001/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/plat_parent/plat_service_8001/src/main/java/cn/lemonsports/PlatServiceApplication_8001.java" />
         <option value="$PROJECT_DIR$/plat_parent/plat_interface/src/main/java/cn/lemonsports/domain/Employee.java" />
         <option value="$PROJECT_DIR$/lovebuy_zuul_server_9527/src/main/java/cn/lemonsports/ZuulApplication_9527.java" />
@@ -95,6 +109,12 @@
         <option value="$PROJECT_DIR$/lovebuy_zuul_server_9527/src/main/java/cn/lemonsports/config/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/lovebuy_zuul_server_9527/src/main/java/cn/lemonsports/config/DocumentationConfig.java" />
         <option value="$PROJECT_DIR$/plat_parent/plat_service_8001/src/main/java/cn/lemonsports/config/Swagger2.java" />
+        <option value="$PROJECT_DIR$/lovebuy_config_server/pom.xml" />
+        <option value="$PROJECT_DIR$/plat_parent/plat_service_8001/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/lovebuy_config_server/src/main/java/ConfigApplication_1299.java" />
+        <option value="$PROJECT_DIR$/lovebuy_config_server/src/main/java/cn/lemonsports/ConfigApplication_1299.java" />
+        <option value="$PROJECT_DIR$/lovebuy_config_server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/plat_parent/plat_service_8001/src/main/resources/bootstrap.yml" />
       </list>
     </option>
   </component>
@@ -124,12 +144,13 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="263" />
+    <option name="y" value="351" />
+    <option name="width" value="1382" />
+    <option name="height" value="788" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -145,7 +166,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
@@ -164,19 +185,24 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springcloud_parent_day02/pom.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/base_parent/base_util/src/main/java/cn/lemonsports" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Javasoft\IntelliJ-workspace\lemonsports_parent\lovebuy_config_server\src\main\resources" />
+      <recent name="E:\Javasoft\IntelliJ-workspace\lemonsports_parent\plat_parent\plat_service_8001\src\main\resources" />
       <recent name="E:\Javasoft\IntelliJ-workspace\lemonsports_parent\lovebuy_zuul_server_9527\src\main\java\cn\lemonsports\config" />
     </key>
   </component>
@@ -192,13 +218,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ZuulApplication_9527">
+  <component name="RunManager" selected="Application.PlatServiceApplication_8001">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
+    </configuration>
+    <configuration name="ConfigApplication_1299" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="cn.lemonsports.ConfigApplication_1299" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="lovebuy_config_server" />
+      <envs />
     </configuration>
     <configuration name="EurekaApplication_7001" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -331,16 +371,18 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.EurekaApplication_7001" />
       <item index="1" class="java.lang.String" itemvalue="Application.PlatServiceApplication_8001" />
       <item index="2" class="java.lang.String" itemvalue="Application.ZuulApplication_9527" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ConfigApplication_1299" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.ZuulApplication_9527" />
-        <item index="1" class="java.lang.String" itemvalue="Application.PlatServiceApplication_8001" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.PlatServiceApplication_8001" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ConfigApplication_1299" />
         <item index="2" class="java.lang.String" itemvalue="Application.EurekaApplication_7001" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ZuulApplication_9527" />
       </list>
     </recent_temporary>
   </component>
@@ -360,14 +402,16 @@
       <workItem from="1547020856094" duration="9689000" />
       <workItem from="1547081579848" duration="1705000" />
       <workItem from="1547096162109" duration="281000" />
+      <workItem from="1547169353859" duration="755000" />
+      <workItem from="1547186866519" duration="5411000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11675000" />
+    <option name="totallyTimeSpent" value="17841000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -382,15 +426,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.118589744" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32905295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34349918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2655068" sideWeight="0.49245283" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32223904" sideWeight="0.49245283" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18456884" sideWeight="0.50754714" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -400,7 +445,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -416,6 +460,38 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lovebuy_config_server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lovebuy_eureka_server_7001/src/main/java/cn/lemonsports/EurekaApplication_7001.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="60" lean-forward="false" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plat_parent/plat_service_8001/src/main/java/cn/lemonsports/PlatServiceApplication_8001.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="65" lean-forward="false" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lovebuy_zuul_server_9527/src/main/java/cn/lemonsports/ZuulApplication_9527.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lovebuy_zuul_server_9527/src/main/java/cn/lemonsports/config/DocumentationConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -435,7 +511,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -452,14 +527,7 @@
     <entry file="file://$PROJECT_DIR$/lovebuy_base_parent/base_interface/pom.xml" />
     <entry file="file://$PROJECT_DIR$/lovebuy_base_parent/base_util/pom.xml" />
     <entry file="file://$PROJECT_DIR$/lovebuy_base_parent/base_util/src/main/java/cn/lemonsports/query/BaseQuery.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="49" lean-forward="false" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml" />
     <entry file="file://$PROJECT_DIR$/base_parent/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -517,26 +585,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plat_parent/plat_service_8001/src/main/java/cn/lemonsports/controller/PlatApplicationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plat_parent/plat_service_8001/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lovebuy_zuul_server_9527/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="52" lean-forward="false" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -544,7 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
           <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -563,6 +614,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lovebuy_zuul_server_9527/src/main/java/cn/lemonsports/config/DocumentationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lovebuy_zuul_server_9527/src/main/java/cn/lemonsports/ZuulApplication_9527.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plat_parent/plat_service_8001/src/main/java/cn/lemonsports/config/Swagger2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -571,17 +637,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lovebuy_zuul_server_9527/src/main/java/cn/lemonsports/config/DocumentationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lovebuy_eureka_server_7001/src/main/java/cn/lemonsports/EurekaApplication_7001.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="10" column="60" lean-forward="false" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plat_parent/plat_service_8001/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lovebuy_config_server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lovebuy_config_server/src/main/java/cn/lemonsports/ConfigApplication_1299.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plat_parent/plat_service_8001/src/main/java/cn/lemonsports/controller/PlatApplicationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -594,10 +685,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lovebuy_zuul_server_9527/src/main/java/cn/lemonsports/ZuulApplication_9527.java">
+    <entry file="file://$PROJECT_DIR$/plat_parent/plat_service_8001/src/main/resources/bootstrap.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+        <state relative-caret-position="264">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lovebuy_config_server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
           <folding />
         </state>
       </provider>

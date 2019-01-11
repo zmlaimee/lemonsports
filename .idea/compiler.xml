@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="base_util" />
+        <module name="lovebuy_config_server" />
         <module name="lovebuy_eureka_server_7001" />
         <module name="lovebuy_zuul_server_9527" />
         <module name="plat_interface" />
@@ -19,6 +20,7 @@
       <module name="base_util" target="1.8" />
       <module name="lemonsports_parent" target="1.8" />
       <module name="lovebuy_base_parent" target="1.8" />
+      <module name="lovebuy_config_server" target="1.8" />
       <module name="lovebuy_eureka_server_7001" target="1.8" />
       <module name="lovebuy_zuul_server_9527" target="1.8" />
       <module name="plat_interface" target="1.8" />

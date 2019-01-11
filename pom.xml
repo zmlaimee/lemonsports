@@ -13,6 +13,7 @@
         <module>lovebuy_zuul_server_9527</module>
         <module>base_parent</module>
         <module>plat_parent</module>
+        <module>lovebuy_config_server</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

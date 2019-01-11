@@ -1,0 +1,18 @@
+server:
+  port: 1299
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka #注册中心地址
+  instance:
+    prefer-ip-address: true #在注册中心显示真实ip
+spring:
+  application:
+    name: spring-cloud-config-server #该配置在注册中心的名称,集群需要用到
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zmlaimee/plat-provider-config.git #获取配置的路径
+          username: zmlaimee #github的账号
+          password: zmlaimee2207085506 #密码

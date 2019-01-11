@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      name: application #github上面的文件名称(application.yml如果分测试test（application-test.yml）或开发dev(application-dev.yml)就)
+      #profile: dev #开发环境
+      label: master #github在创建时会有一个默认的分支master
+      uri: http://127.0.0.1:1299 #指定github服务器ip
+eureka:
+  client:
+    service-url:
+     defaultZone: http://localhost:7001/eureka  #注册中心的ip(要在注册中心注册)
+  instance:
+    prefer-ip-address: true #显示客户端真实ip
