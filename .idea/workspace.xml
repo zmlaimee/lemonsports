@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c82a1ca7-dff3-4e3b-88a9-058f06c8190e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/lovebuy_zuul_server_9527/src/main/java/cn/lemonsports/config/SwaggerConfig.java" afterPath="$PROJECT_DIR$/lovebuy_zuul_server_9527/src/main/java/cn/lemonsports/config/SwaggerConfig.java" />
       <change beforePath="$PROJECT_DIR$/lovebuy_zuul_server_9527/target/classes/application.yml" afterPath="$PROJECT_DIR$/lovebuy_zuul_server_9527/target/classes/application.yml" />
       <change beforePath="$PROJECT_DIR$/lovebuy_zuul_server_9527/target/classes/cn/lemonsports/config/DocumentationConfig.class" afterPath="$PROJECT_DIR$/lovebuy_zuul_server_9527/target/classes/cn/lemonsports/config/DocumentationConfig.class" />
       <change beforePath="$PROJECT_DIR$/plat_parent/plat_service_8001/target/classes/cn/lemonsports/controller/PlatApplicationController.class" afterPath="$PROJECT_DIR$/plat_parent/plat_service_8001/target/classes/cn/lemonsports/controller/PlatApplicationController.class" />
@@ -493,7 +492,7 @@
       <workItem from="1547299709275" duration="7880000" />
       <workItem from="1547340425344" duration="1322000" />
       <workItem from="1547377439884" duration="580000" />
-      <workItem from="1547445806773" duration="8073000" />
+      <workItem from="1547445806773" duration="8137000" />
     </task>
     <task id="LOCAL-00001" summary="获取了平台管理服务提供者的配置">
       <created>1547194745087</created>
@@ -516,11 +515,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547463056622</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="代码生成配置好，测试之前">
+      <created>1547465331879</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1547465331879</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39824000" />
+    <option name="totallyTimeSpent" value="39888000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -570,7 +576,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="获取了平台管理服务提供者的配置" />
     <MESSAGE value="前后端已经连接" />
-    <option name="LAST_COMMIT_MESSAGE" value="前后端已经连接" />
+    <MESSAGE value="代码生成配置好，测试之前" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码生成配置好，测试之前" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
