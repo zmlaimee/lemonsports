@@ -8,7 +8,7 @@ import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
-//配置接口文档api同时在服务提供端也要配置
+//配置接口文档api同时在服务提供端也要配置DocumentationConfig和SwaggerConfig
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
