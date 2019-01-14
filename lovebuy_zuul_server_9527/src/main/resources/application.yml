@@ -14,6 +14,8 @@ zuul:
   routes:
     plat.serviceId: lovebuy-plat #这是调用满足条件的服务名，注意要小写
     plat.path: /plat/** #这是所有路径前的通配
+    product.serviceId: lovebuy-product #这是调用满足条件的服务名，注意要小写
+    product.path: /product/** #这是所有路径前的通配
   ignored-services: "*" #用*来通配符，忽略从9527端口通过服务名来调用
   prefix: "/services" #这是所有路径的前缀
   #http://localhost:9527/services/plat/plat/employee

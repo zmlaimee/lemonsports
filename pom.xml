@@ -14,6 +14,8 @@
         <module>base_parent</module>
         <module>plat_parent</module>
         <module>lovebuy_config_server</module>
+        <module>lovebuy_gencode</module>
+        <module>product_parent</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

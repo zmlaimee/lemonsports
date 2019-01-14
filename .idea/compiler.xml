@@ -9,9 +9,12 @@
         <module name="base_util" />
         <module name="lovebuy_config_server" />
         <module name="lovebuy_eureka_server_7001" />
+        <module name="lovebuy_gencode" />
         <module name="lovebuy_zuul_server_9527" />
         <module name="plat_interface" />
         <module name="plat_service_8001" />
+        <module name="product_interface" />
+        <module name="product_service_8002" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,11 +25,15 @@
       <module name="lovebuy_base_parent" target="1.8" />
       <module name="lovebuy_config_server" target="1.8" />
       <module name="lovebuy_eureka_server_7001" target="1.8" />
+      <module name="lovebuy_gencode" target="1.8" />
       <module name="lovebuy_zuul_server_9527" target="1.8" />
       <module name="plat_interface" target="1.8" />
       <module name="plat_parent" target="1.8" />
       <module name="plat_provider_service_8001" target="1.8" />
       <module name="plat_service_8001" target="1.8" />
+      <module name="product_interface" target="1.8" />
+      <module name="product_parent" target="1.8" />
+      <module name="product_service_8002" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

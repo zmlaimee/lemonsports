@@ -13,8 +13,9 @@ public class PlatApplicationController {
     //登录入口
     @RequestMapping(value="/login",method = RequestMethod.POST)
     public AjaxResult login(@RequestBody Employee employee){
-        if ("zhang".equals(employee.getName())&&"123"==employee.getPassword()){
+        if ("admin".equals(employee.getName())&&"123456".equals(employee.getPassword())){
             return AjaxResult.getAjaxResult();
+
         }
         return AjaxResult.getAjaxResult().setSuccess(false).setMessage("用户名或密码错误！").setObject("出错啦！");
     }
