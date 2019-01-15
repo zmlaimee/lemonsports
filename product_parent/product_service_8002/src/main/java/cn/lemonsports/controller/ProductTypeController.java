@@ -53,11 +53,16 @@ public class ProductTypeController {
         }
     }
 
-    //获取用户
+    //根据id获取商品类型
     @RequestMapping(value = "/{id}",method = RequestMethod.GET)
     public ProductType get(@PathVariable("id")Long id)
     {
         return productTypeService.selectById(id);
+    }
+    //获取所有的商品类型，并分父子菜单
+    @RequestMapping(value = "/treeData",method = RequestMethod.GET)
+    public List<ProductType> treeData(){
+        return productTypeService.treeData();
     }
 
 

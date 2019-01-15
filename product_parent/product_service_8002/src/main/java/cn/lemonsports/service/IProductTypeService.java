@@ -3,6 +3,8 @@ package cn.lemonsports.service;
 import cn.lemonsports.domain.ProductType;
 import com.baomidou.mybatisplus.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  * 商品目录 服务类
@@ -13,4 +15,5 @@ import com.baomidou.mybatisplus.service.IService;
  */
 public interface IProductTypeService extends IService<ProductType> {
 
+    List<ProductType> treeData();
 }

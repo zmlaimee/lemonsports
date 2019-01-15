@@ -81,8 +81,9 @@ public class BrandController {
     @RequestMapping(value = "/json",method = RequestMethod.POST)
     public PageList<Brand> json(@RequestBody BrandQuery query)
     {
-        Page<Brand> page = new Page<Brand>(query.getPage(),query.getRows());
-            page = brandService.selectPage(page);
-            return new PageList<Brand>(page.getTotal(),page.getRecords());
+        return brandService.selectPageList(query);
+//        Page<Brand> page = new Page<Brand>(query.getPage(),query.getRows());
+//            page = brandService.selectPage(page);
+//            return new PageList<Brand>(page.getTotal(),page.getRecords());
     }
 }
