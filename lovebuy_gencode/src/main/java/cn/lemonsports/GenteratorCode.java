@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.generator.config.rules.DbType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 
 import java.util.*;
-
+//整个模块就是代码生成器的配置：模板在templates中，properties文件配置生成路径和连接数据库
 public class GenteratorCode {
 
     public static void main(String[] args) throws InterruptedException {
@@ -39,7 +39,7 @@ public class GenteratorCode {
         StrategyConfig strategy = new StrategyConfig();
         strategy.setTablePrefix(new String[] { "t_" });// 此处可以修改为您的表前缀
         strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略 t_user_xxx UserXxx
-        strategy.setInclude(new String[]{"t_user"}); // 需要生成的表
+        strategy.setInclude(new String[]{"t_product"}); // 需要生成的表
         mpg.setStrategy(strategy);
         // 包配置
         PackageConfig pc = new PackageConfig();
@@ -62,6 +62,17 @@ public class GenteratorCode {
         };
 
         List<FileOutConfig> focList = new ArrayList<FileOutConfig>();
+
+        // 调整 query 生成目录演示
+        focList.add(new FileOutConfig("/templates/query.java.vm") {
+            @Override
+            public String outputFile(TableInfo tableInfo) {
+                return rb.getString("OutputDirBase")+ "/cn/lemonsports/query/" + tableInfo.getEntityName() + "Query.java";
+            }
+        });
+        cfg.setFileOutConfigList(focList);
+        mpg.setCfg(cfg);
+
 
         // 调整 domain 生成目录演示
         focList.add(new FileOutConfig("/templates/entity.java.vm") {
@@ -88,7 +99,7 @@ public class GenteratorCode {
         tc.setServiceImpl("/templates/serviceImpl.java.vm");
         tc.setEntity(null);
         tc.setMapper("/templates/mapper.java.vm");
-        tc.setController(null);
+        tc.setController("/templates/controller.java.vm");
         tc.setXml(null);
         // 如上任何一个模块如果设置 空 OR Null 将不生成该模块。
         mpg.setTemplate(tc);

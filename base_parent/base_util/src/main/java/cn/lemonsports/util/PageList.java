@@ -1,22 +1,42 @@
 package cn.lemonsports.util;
 
-public class PageList {
-    private Long row;
-    private Integer page;
+import java.util.ArrayList;
+import java.util.List;
 
-    public Long getRow() {
-        return row;
+public class PageList<T> {
+    private long total;
+    private List<T> rows = new ArrayList<>();
+
+    public long getTotal() {
+        return total;
     }
 
-    public void setRow(Long row) {
-        this.row = row;
+    public void setTotal(long total) {
+        this.total = total;
     }
 
-    public Integer getPage() {
-        return page;
+    public List<T> getRows() {
+        return rows;
     }
 
-    public void setPage(Integer page) {
-        this.page = page;
+    public void setRows(List<T> rows) {
+        this.rows = rows;
+    }
+
+    @Override
+    public String toString() {
+        return "PageList{" +
+                "total=" + total +
+                ", rows=" + rows +
+                '}';
+    }
+
+    //提供有参构造方法，方便测试
+    public PageList(long total, List<T> rows) {
+        this.total = total;
+        this.rows = rows;
+    }
+    //除了有参构造方法，还需要提供一个无参构造方法
+    public PageList() {
     }
 }

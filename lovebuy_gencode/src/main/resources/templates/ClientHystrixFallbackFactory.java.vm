@@ -1,9 +1,9 @@
 package cn.itsource.aigou.client;
 
 import ${package.Entity}.${entity};
-import cn.itsource.aigou.query.${entity}Query;
-import cn.itsource.aigou.util.AjaxResult;
-import cn.itsource.aigou.util.PageList;
+import cn.lemonsports.query.${entity}Query;
+import cn.lemonsports.util.AjaxResult;
+import cn.lemonsports.util.PageList;
 import feign.hystrix.FallbackFactory;
 import org.springframework.stereotype.Component;
 
