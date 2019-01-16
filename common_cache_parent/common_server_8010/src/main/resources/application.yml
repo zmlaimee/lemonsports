@@ -1,0 +1,5 @@
+server: #需要在本地加上端口号和自己在注册中心的服务名，远程配置不行
+  port: 8010
+spring:
+  application:
+    name: lovebuy-common

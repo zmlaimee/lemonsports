@@ -1,0 +1,17 @@
+spring: #其他配置在github上面
+  cloud:
+    config:
+      name: application-common
+      #github上面的文件名称(application-product-test.yml如果分测试test（application-product-test.yml）或开发dev(application-product-dev.yml)就)
+      profile: dev #开发环境
+      label: master #github在创建时会有一个默认的分支master
+      #uri: http://127.0.0.1:1299 #指定从github上获取配置的服务端（lovebuy_config_server）ip单机配置
+      discovery: #集群配置
+        enabled: true #从eureka上面找配置服务
+        service-id: spring-cloud-config-server #从注册中心获取配置的指定服务名
+eureka: #eureka不能放到远程配置中
+  client:
+    service-url:
+     defaultZone: http://localhost:7001/eureka  #告诉服务提供者要把服务注册到哪儿 #单机环境
+  instance:
+    prefer-ip-address: true #显示客户端真实ip

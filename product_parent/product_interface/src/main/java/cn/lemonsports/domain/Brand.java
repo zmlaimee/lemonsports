@@ -42,10 +42,27 @@ public class Brand extends Model<Brand> {
      */
     @TableField("product_type_id")
     private Long productTypeId;
+
+    @TableField(exist=false) //数据库中不需要映射,仅仅用来封装数据传到前台
+    private ProductType productType;
     private Integer sortIndex;
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public ProductType getProductType() {
+        return productType;
+    }
+
+    public void setProductType(ProductType productType) {
+        this.productType = productType;
+    }
+
     /**
      * 品牌LOGO
      */
+
     private String logo;
 
 
