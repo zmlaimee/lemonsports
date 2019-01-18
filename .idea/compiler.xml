@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="base_util" />
+        <module name="common_interface" />
+        <module name="common_server_8010" />
         <module name="lovebuy_config_server" />
         <module name="lovebuy_eureka_server_7001" />
         <module name="lovebuy_gencode" />
@@ -21,6 +23,9 @@
       <module name="base_interface" target="1.8" />
       <module name="base_parent" target="1.8" />
       <module name="base_util" target="1.8" />
+      <module name="common_cache_parent" target="1.8" />
+      <module name="common_interface" target="1.8" />
+      <module name="common_server_8010" target="1.8" />
       <module name="lemonsports_parent" target="1.8" />
       <module name="lovebuy_base_parent" target="1.8" />
       <module name="lovebuy_config_server" target="1.8" />

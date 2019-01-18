@@ -9,6 +9,7 @@ import com.baomidou.mybatisplus.plugins.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -43,13 +44,25 @@ public class BrandController {
     * @return
     */
     @RequestMapping(value="/{id}",method=RequestMethod.DELETE)
-    public AjaxResult delete(@PathVariable("id") Long id){
+    public AjaxResult delete(@PathVariable("id")Long id){
         try {
             brandService.deleteById(id);
             return AjaxResult.getAjaxResult();
         } catch (Exception e) {
         e.printStackTrace();
-            return AjaxResult.getAjaxResult().setMessage("删除对象失败！"+e.getMessage());
+            return AjaxResult.getAjaxResult().setMessage("删除失败！"+e.getMessage());
+        }
+    }
+    @RequestMapping(value="/idsjson/{ids}",method=RequestMethod.DELETE)
+    public AjaxResult deleteAll(@PathVariable("ids") String ids){//接收前端传来的多个id字符串（数组形式的字符串）
+        try {//@PathVariable("ids") String ids是restful风格传参
+            String[] split = ids.split(",");//拆分字符串以逗号分隔拆分为数组
+            //brandService.deleteById(id);
+            brandService.deleteBatchIds(Arrays.asList(split));//直接传入数组
+            return AjaxResult.getAjaxResult();
+        } catch (Exception e) {
+        e.printStackTrace();
+            return AjaxResult.getAjaxResult().setMessage("删除失败！"+e.getMessage());
         }
     }
 
@@ -80,7 +93,7 @@ public class BrandController {
     */
     @RequestMapping(value = "/json",method = RequestMethod.POST)
     public PageList<Brand> json(@RequestBody BrandQuery query)
-    {
+    {//@RequestBody BrandQuery query是json格式的对象传参
         return brandService.selectPageList(query);
 //        Page<Brand> page = new Page<Brand>(query.getPage(),query.getRows());
 //            page = brandService.selectPage(page);

@@ -12,10 +12,24 @@ eureka:
     prefer-ip-address: true
 zuul:
   routes:
-    plat.serviceId: lovebuy-plat #这是调用满足条件的服务名，注意要小写
+    plat.serviceId: lovebuy-plat #这是调用满足条件的服务名（在注册中心的名字），注意要小写  平台管理模块
     plat.path: /plat/** #这是所有路径前的通配
-    product.serviceId: lovebuy-product #这是调用满足条件的服务名，注意要小写
-    product.path: /product/** #这是所有路径前的通配
+    product.serviceId: lovebuy-product-dev #产品模块的服务名
+    product.path: /product/** #
+    common.serviceId: lovebuy-common-dev #产品模块的服务名
+    common.path: /common/** #
   ignored-services: "*" #用*来通配符，忽略从9527端口通过服务名来调用
   prefix: "/services" #这是所有路径的前缀
+  #前端通过网关的访问路径
   #http://localhost:9527/services/plat/plat/employee
+  #http://localhost:9527/services/product/brand/save
+  #http://localhost:9527/services/common/..../....
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000

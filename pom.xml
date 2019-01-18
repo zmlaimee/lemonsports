@@ -16,6 +16,7 @@
         <module>lovebuy_config_server</module>
         <module>lovebuy_gencode</module>
         <module>product_parent</module>
+        <module>common_cache_parent</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

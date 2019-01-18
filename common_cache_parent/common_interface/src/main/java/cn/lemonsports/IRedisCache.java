@@ -14,7 +14,9 @@ public interface IRedisCache {
 
     @RequestMapping(value = "/redis",method = RequestMethod.POST)
     void set(@RequestParam("key")String key, @RequestParam("value")String value);//添加缓存数据
-
+//@RequestParam前台传什么后台直接接收什么类型的参数，非restful风格
+    ////@PathVariable("ids") String ids是restful风格传参 @RequestMapping(value="/idsjson/{ids}",method=RequestMethod.DELETE)
+//@RequestBody BrandQuery query是json格式的对象传参
     @RequestMapping(value = "/redis",method = RequestMethod.GET)
     String get(@RequestParam("key")String key);//获取缓存数据
 }

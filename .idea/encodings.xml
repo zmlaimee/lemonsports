@@ -4,6 +4,9 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base_parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base_parent/base_util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common_cache_parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common_cache_parent/common_interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common_cache_parent/common_server_8010" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lovebuy_config_server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lovebuy_eureka_server_7001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lovebuy_gencode" charset="UTF-8" />

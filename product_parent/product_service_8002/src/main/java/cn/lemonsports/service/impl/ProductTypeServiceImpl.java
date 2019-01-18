@@ -1,6 +1,7 @@
 package cn.lemonsports.service.impl;
 
 import cn.lemonsports.IRedisCache;
+import cn.lemonsports.PageClient;
 import cn.lemonsports.domain.Product;
 import cn.lemonsports.domain.ProductType;
 import cn.lemonsports.mapper.ProductTypeMapper;
@@ -8,6 +9,7 @@ import cn.lemonsports.service.IProductTypeService;
 import cn.lemonsports.domain.ProductType;
 import cn.lemonsports.mapper.ProductTypeMapper;
 import cn.lemonsports.service.IProductTypeService;
+import cn.lemonsports.utils.VelocityUtils;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
@@ -40,47 +42,83 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
     @Autowired
     //注入common_cache_parent设计的接口IRedisCache
     private IRedisCache iRedisCache;
+    @Autowired
+    private PageClient pageClient;
+
     @Override
     public boolean insert(ProductType entity) {
-        iRedisCache.set("productType_redis", "");
-        return super.insert(entity);
+       // iRedisCache.set("productType_redis", "");
+        super.insert(entity);
+        staticPage();
+        return true;
     }
 
     @Override
     public boolean deleteById(Serializable id) {
-        iRedisCache.set("productType_redis", "");
-        return super.deleteById(id);
+       // iRedisCache.set("productType_redis", "");
+        super.deleteById(id);
+        staticPage();
+        return true;
     }
 
     @Override
     public boolean updateById(ProductType entity) {
-        iRedisCache.set("productType_redis", "");
-        return super.updateById(entity);
+        //iRedisCache.set("productType_redis", "");
+      super.updateById(entity);
+        staticPage();
+        return true;
     }
-
+    /**
+     * 增删改之后要同步缓存+页面静态化
+     */
+    private void  staticPage(){
+        //同步缓存
+        //静态化商品类型
+        Map<String,Object> map1=new HashMap<>();
+        List<ProductType> treeDataLoop = getTreeDataLoop();
+        map1.put("model", treeDataLoop);
+        map1.put("tmeplatePath","E:\\Javasoft\\IntelliJ-workspace\\lemonsports_parent\\product_parent\\product_service_8002\\src\\main\\resources\\template\\productType\\product.type.vm" );
+        map1.put("staticPagePath","E:\\Javasoft\\IntelliJ-workspace\\lemonsports_parent\\product_parent\\product_service_8002\\src\\main\\resources\\template\\productType\\product.type.vm.html" );
+        pageClient.genStaticPage(map1);
+        /* Object model = params.get("model");
+        // tmeplatePath==xxx
+       String tmeplatePath = (String) params.get("tmeplatePath");
+       //  staticPagePath = xxx
+        String staticPagePath = (String) params.get("staticPagePath");
+        * */
+        //静态化home主页
+        Map<String,Object> map2=new HashMap<>();
+        Map<String,Object> map3=new HashMap<>();
+        map3.put("staticRoot", "E:\\Javasoft\\IntelliJ-workspace\\lemonsports_parent\\product_parent\\product_service_8002\\src\\main\\resources\\");
+        map2.put("model",map3 );
+        map2.put("tmeplatePath", "E:\\Javasoft\\IntelliJ-workspace\\lemonsports_parent\\product_parent\\product_service_8002\\src\\main\\resources\\template\\home.vm");
+        map2.put("staticPagePath", "E:\\Javasoft\\IntelliJ-workspace\\lemonsports_web_parent\\lovebuy_shopping\\home.html");
+        pageClient.genStaticPage(map2);
+    }
     /**
      * 查询所有商品类型得到菜单树
      * @return
      */
     @Override
-    public List<ProductType> treeData()
-    {
+    public List<ProductType> treeData(){
 
         // 1 递归方案效率低,要发多次sql
         //return getTreeDataRecursion(0L);
-        String productType_redis = iRedisCache.get("productType_redis");
+       /* String productType_redis = iRedisCache.get("productType_redis");
         if (StringUtils.isNotEmpty(productType_redis)){
             //如果存在缓存,就直接将缓存数据返回
             return JSONArray.parseArray(productType_redis,ProductType.class );
         }else {//不存在缓存就查数据库，然后将其放入缓存中
             // 2 循环方案,只需发一条sql
-            List<ProductType> treeDataLoop = getTreeDataLoop(0L);
-            iRedisCache.set(productType_redis,JSONArray.toJSONString(treeDataLoop, SerializerFeature.WriteMapNullValue) );
+            List<ProductType> treeDataLoop = getTreeDataLoop();
+            iRedisCache.set(productType_redis,JSONArray.toJSONString(treeDataLoop) );
+            System.out.println("treeDataLoop数据=========="+treeDataLoop);
             return treeDataLoop;
-        }
+        }*/
+        return getTreeDataLoop();//不用缓存
     }
     //方案2：
-    private List<ProductType> getTreeDataLoop(long l) {
+    private List<ProductType> getTreeDataLoop() {
         //返回数据 一级类型,下面挂了子子孙孙类型
         List<ProductType> result = new ArrayList<>();
         //1 获取所有的商品类型
@@ -94,7 +132,7 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
         for (ProductType productType : productTypes) {
             Long pid = productType.getPid();
             // ①如果没有父亲就是一级类型 放入返回列表中
-            if (pid.longValue() == 0){
+            if (pid.longValue() == 0L){
                 result.add(productType);
             }else{
                 // ②如果有父亲就是把自己当做一个儿子就ok
